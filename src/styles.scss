@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: lightblue;
+
+  .appHeader {
+    background-color: black;
+    font-size: 28px;
+    min-height: 60px;
+    h3 {
+      color: white;
+      font-weight: 800;
+    }
+    span {
+      color: lightblue;
+      font-weight: 200;
+    }
+  }
+  .timeContainer {
+  background-color: #f8f8ff;
+  border: 5px solid black;
+  font-size: 24px;
+  }
+
+
+  .actionContainer {
+    background-color: #f8f8ff;
+    display: inline-flex;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    height: 100vh;
+  }
+  .lap {
+    background-color: yellow;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    border-bottom: 5px solid black;
+    border-left: 5px solid black;
+  }
+  button{
+    display:inline-block;
+    font-size: 20px;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:black;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    outline:none;
+    }
+    .startbtn {
+      background-color: green;
+    }
+    .lapbtn, .pausebtn {
+      background-color:lightblue
+    }
+    .stopbtn {
+      background-color:firebrick
+    }
+
+    button:hover{
+    border-color: rgba(0,0,0,3);
+    }
+    @media all and (max-width:30em){
+     button{
+    display:flex;
+    margin:0.2em auto;
+    }
+  }
+}
